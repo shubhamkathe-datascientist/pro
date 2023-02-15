@@ -1,7 +1,7 @@
 n=int(input("enter num"))
 i=n
 count=0
-while i<0:
+while i>0:
     count=count+1
     i//=10
 i=n
@@ -12,6 +12,14 @@ while i>0:
     pro=1
     x=1
     while x<=count:
-        pro=pro+digit
+        pro=pro*digit
+        x+=1
+    sum=sum+pro
+    i//=10
+if sum==n:
+    print("num is palidrome")
+else:
+    print("not palidrome")            
+
         
         
